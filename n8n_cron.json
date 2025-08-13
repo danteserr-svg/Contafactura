@@ -1,0 +1,36 @@
+{
+    "nodes": [
+      {
+        "parameters": {
+          "triggerTimes": {
+            "item": [
+              {
+                "hour": 6,
+                "minute": 50
+              },
+              {
+                "hour": 8,
+                "minute": 0
+              },
+              {
+                "hour": 9,
+                "minute": 30
+              },
+              {
+                "hour": 11,
+                "minute": 0
+              }
+            ]
+          }
+        },
+        "name": "Cron",
+        "type": "n8n-nodes-base.cron",
+        "typeVersion": 1,
+        "position": [
+          250,
+          300
+        ]
+      }
+    ]
+  }
+  

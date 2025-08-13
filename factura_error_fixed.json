@@ -1,0 +1,86 @@
+{
+  "CfdiType": "I",
+  "Folio": 41,
+  "Date": "2023-05-17 14:00:00",
+  "PaymentForm": "03",
+  "PaymentMethod": "PUE",
+  "ExpeditionPlace": "52929",
+  "Currency": "MXN",
+  "Issuer": {
+    "FiscalRegime": "601",
+    "Rfc": "SIC240328GN2",
+    "Name": "SSG INFRAESTRUCTURA Y CONSTRUCCION",
+    "TaxZipCode": "52929"
+  },
+  "Receiver": {{
+  "CfdiType": "I",
+  "Folio": 41,
+  "Date": "2025-05-16 14:00:00",
+  "PaymentForm": "03",
+  "PaymentMethod": "PUE",
+  "ExpeditionPlace": "52929",
+  "Currency": "MXN",
+  "Issuer": {
+    "FiscalRegime": "601",
+    "Rfc": "SIC240328GN2",
+    "Name": "SSG INFRAESTRUCTURA Y CONSTRUCCION",
+    "TaxZipCode": "52929"
+  },
+  "Receiver": {
+    "Rfc": "SEMJ9208122L5",
+    "Name": "JACOBO SERRANO MARTINEZ",
+    "CfdiUse": "G03",
+    "TaxZipCode": "54020",
+    "FiscalRegime": "612"
+  },
+  "Items": [
+    {
+      "ProductCode": "80111600",
+      "Description": "Servicios de personal temporal",
+      "UnitCode": "E48",
+      "UnitPrice": 100,
+      "Quantity": 1,
+      "Subtotal": 100,
+      "TaxObject": "02",
+      "Taxes": [
+        {
+          "Total": 16,
+          "Name": "IVA",
+          "Base": 100,
+          "Rate": 0.16,
+          "IsRetention": false
+        }
+      ],
+      "Total": 116
+    }
+  ]
+}
+
+    "Rfc": "SEMJ9208122L5",
+    "Name": "JACOBO SERRANO MARTINEZ",
+    "CfdiUse": "G03",
+    "TaxZipCode": "54020",
+    "FiscalRegime": "612"
+  },
+  "Items": [
+    {
+      "ProductCode": "80111600",
+      "Description": "Servicios de personal temporal",
+      "UnitCode": "E48",
+      "UnitPrice": 100,
+      "Quantity": 1,
+      "Subtotal": 100,
+      "TaxObject": "02",
+      "Taxes": [
+        {
+          "Total": 16,
+          "Name": "IVA",
+          "Base": 100,
+          "Rate": 0.16,
+          "IsRetention": false
+        }
+      ],
+      "Total": 116
+    }
+  ]
+}

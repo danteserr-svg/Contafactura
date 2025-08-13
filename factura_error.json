@@ -1,0 +1,131 @@
+{
+  "NameId": 1,
+  "LogoUrl": "",
+  "CfdiType": "I",
+  "Serie": "1",
+  "Folio": "41",
+  "Date": "2025-05-17",
+  "PaymentForm": "03",
+  "PaymentMethod": "PUE",
+  "ExpeditionPlace": "52929",
+  "Currency": "MXN",
+  "ExchangeRate": 1,
+  "OrderNumber": "",
+  "PaymentConditions": "",
+  "Observations": "",
+  "Exportation": "01",
+  "Issuer": {
+    "Rfc": "SIC240328GN2",
+    "Name": "SSG INFRAESTRUCTURA Y CONSTRUCCION",
+    "TaxZipCode": "52929",
+    "FiscalRegime": "601",
+    "Address": {
+      "Street": "Av. Principal",
+      "ExteriorNumber": "123",
+      "InteriorNumber": "",
+      "Neighborhood": "CENTRO",
+      "ZipCode": "52929",
+      "Locality": "Ciudad de México",
+      "Municipality": "Naucalpan",
+      "State": "MEX",
+      "Country": "MEX",
+      "Id": ""
+    }
+  },
+  "Receiver": {
+    "Rfc": "SEMJ9208122L5",
+    "Name": "JACOBO SERRANO MARTINEZ",
+    "CfdiUse": "G03",
+    "TaxZipCode": "54020",
+    "FiscalRegime": "612",
+    "Address": {
+      "Street": "Calle Principal",
+      "ExteriorNumber": "456",
+      "InteriorNumber": "",
+      "Neighborhood": "CENTRO",
+      "ZipCode": "54020",
+      "Locality": "Ciudad de México",
+      "Municipality": "Tlalnepantla",
+      "State": "MEX",
+      "Country": "MEX",
+      "Id": ""
+    }
+  },
+  "Items": [
+    {
+      "ProductCode": "80111600",
+      "IdentificationNumber": "1234",
+      "Description": "Servicios de personal temporal",
+      "Unit": "E48",
+      "UnitCode": "E48",
+      "UnitPrice": 100,
+      "Quantity": 1,
+      "Subtotal": 100,
+      "TaxObject": "02",
+      "Taxes": [
+        {
+          "Total": 16,
+          "Name": "IVA",
+          "Base": 100,
+          "Rate": 0.16,
+          "IsRetention": false
+        }
+      ],
+      "Total": 116
+    }
+  ],
+  "GlobalInformation": {
+    "Periodicity": "01",
+    "Months": "05",
+    "Year": 2025
+  },
+  "Relations": {
+    "Type": "01",
+    "Cfdis": []
+  },
+  "Complemento": {
+    "NotariosPublicos": {},
+    "Ine": {},
+    "Detallista": {},
+    "Payments": [],
+    "Donation": {
+      "AuthorizationNumber": "123456",
+      "AuthorizationDate": "2025-05-16",
+      "Legend": "Donación autorizada"
+    },
+    "Payroll": {
+      "Type": "O",
+      "Employee": {
+        "Curp": "SEMJ920812HDFMRL00",
+        "SocialSecurityNumber": "12345678901",
+        "StartDateLaborRelations": "2025-01-01",
+        "ContractType": "01",
+        "Unionized": false,
+        "TypeOfJourney": "01",
+        "RegimeType": "02",
+        "EmployeeNumber": "001",
+        "Department": "Administración",
+        "Position": "Gerente",
+        "PositionRisk": "1",
+        "FrequencyPayment": "04",
+        "Bank": "BANAMEX",
+        "BankAccount": "1234567890",
+        "BaseSalary": 10000,
+        "DailySalary": 333.33,
+        "FederalEntityKey": "15"
+      },
+      "DaysPaid": 30
+    },
+    "TaxLegends": {
+      "Legends": [
+        {
+          "TaxProvision": "IVA",
+          "Norm": "LIVA",
+          "Text": "Este comprobante ampara un donativo"
+        }
+      ]
+    },
+    "CartaPorte31": {},
+    "ValesDeDespensa": {}
+  }
+}

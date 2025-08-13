@@ -1,0 +1,46 @@
+{
+    "CfdiType": "I",
+    "Serie": "1",
+    "Folio": "40",
+    "Date": "2025-05-17",
+    "PaymentForm": "03",
+    "PaymentMethod": "PUE",
+    "ExpeditionPlace": "52929",
+    "Currency": "MXN",
+    "ExchangeRate": 1,
+    "OrderNumber": "",
+    "PaymentConditions": "",
+    "Observations": "",
+    "Exportation": "01",
+    "Issuer": {
+      "Rfc": "SIC240328GN2",
+      "Name": "SSG INFRAESTRUCTURA Y CONSTRUCCION",
+      "TaxZipCode": "52929",
+      "FiscalRegime": "601"
+    },
+    "Receiver": {
+      "Rfc": "SEMJ9208122L5",
+      "Name": "JACOBO SERRANO MARTINEZ",
+      "CfdiUse": "G03",
+      "TaxZipCode": "54020",
+      "FiscalRegime": "612"
+    },
+    "Items": [
+      {
+        "ProductCode": "80111600",
+        "IdentificationNumber": "1234",
+        "Description": "Servicios de personal temporal",
+        "Unit": "E48",
+        "UnitCode": "E48",
+        "UnitPrice": 100,
+        "Quantity": 1,
+        "Subtotal": 100,
+        "TaxObject": "02",
+        "Taxes": [],
+        "Total": 116
+      }
+    ]
+  }
+
+  2PACX-1vT8K-KObQudxFMrreSfqAHnzwAlkavUvt64F2pSJ6qLQgPGVVX0ny1V-vlE0OegGdHdCya82PtuJtuI
+  19_s1YYPTgzWTbVK5jA-zM-_tgGRfDbYKOtil9DzjEOI
