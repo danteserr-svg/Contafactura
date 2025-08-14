@@ -2,13 +2,212 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>contaFactura - Facturación Digital CFDI 4.0</title>
+    <!-- Tipografía principal (puedes cargar la fuente desde Adobe Fonts o similar) -->
+    <link rel="stylesheet" href="https://use.typekit.net/xxxxxxx.css"> <!-- Sustituye por tu kit de Acumin Variable Concept -->
+    <!-- TailwindCSS o tu CSS propio -->
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: 'acumin-variable-concept', Arial, sans-serif;
+        background: #DCEBF9;
+        margin: 0;
+      }
+      h1, h2, h3 {
+        font-family: 'acumin-variable-concept', Arial, sans-serif;
+        font-weight: bold;
+        font-size: 2em;
+      }
+      .light {
+        font-weight: 300;
+        font-size: 1.5em;
+      }
+      .italic {
+        font-style: italic;
+      }
+      .btn-main {
+        background: #1874F6;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        font-size: 1.1em;
+        padding: 0.7em 2em;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      .btn-main:hover {
+        background: #fff;
+        color: #1874F6;
+        border: 1px solid #1874F6;
+      }
+      .btn-outline {
+        background: transparent;
+        color: #1874F6;
+        border: 1px solid #1874F6;
+        border-radius: 6px;
+        font-size: 1em;
+        padding: 0.6em 1.5em;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      .btn-outline:hover {
+        background: #1874F6;
+        color: #fff;
+      }
+      header {
+        background: #fff;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+        box-shadow: 0 2px 8px rgba(24, 116, 246, 0.05);
+        padding: 1em 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .fade-in {
+        animation: fadeInUp 1.2s ease;
+      }
+      @keyframes fadeInUp {
+        0% { opacity: 0; transform: translateY(40px);}
+        100% { opacity: 1; transform: translateY(0);}
+      }
+      .hero {
+        margin-top: 100px;
+        background: #fff;
+        padding: 3em 2em;
+        border-radius: 16px;
+        box-shadow: 0 4px 24px #1874F615;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 2em;
+      }
+      /* Más estilos aquí según tu preferencia */
+    </style>
   </head>
   <body>
-    <div id="root"></div>
-        <script src="https://cdn.jsdelivr.net/npm/@peculiar/x509/build/x509.js"></script>
-    <script type="module" src="/src/main.tsx"></script>
+    <!-- Header -->
+    <header>
+      <div style="display:flex; align-items:center;">
+        <img src="logo.svg" alt="Logo Contafactura" style="height:48px; margin-right:1em;">
+        <span style="font-size:1.5em; color:#1874F6; font-weight:bold;">contaFactura</span>
+      </div>
+      <nav>
+        <a href="#" style="margin:0 1em; color:#1874F6;">Inicio</a>
+        <a href="#servicios" style="margin:0 1em; color:#1874F6;">Servicios</a>
+        <a href="#paquetes" style="margin:0 1em; color:#1874F6;">Planes</a>
+        <a href="#contacto" style="margin:0 1em; color:#1874F6;">Contacto</a>
+        <a href="#" class="btn-outline">Iniciar sesión</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero fade-in">
+      <div style="flex:2;">
+        <h1>Facturación electrónica sin complicaciones, perfecta para emprendedores y profesionales</h1>
+        <p class="light">Emite y gestiona de forma fácil y confiable desde cualquier lugar.</p>
+        <button class="btn-main" onclick="location.href='login.html'">Empieza gratis</button>
+      </div>
+      <div style="flex:1; min-width:300px;">
+        <!-- Espacio para captura de pantalla de la plataforma -->
+        <img src="screenshot.png" alt="Captura de la plataforma" style="border-radius:12px; box-shadow:0 4px 24px #1874F633;">
+      </div>
+    </section>
+
+    <!-- Características principales -->
+    <section class="fade-in">
+      <ul>
+        <li>Guarda clientes y productos automáticamente con cada factura</li>
+        <li>Personaliza con tu logo y datos bancarios</li>
+        <li>Envía por correo electrónico en la misma plataforma</li>
+        <li>Revisión automática antes del timbrado</li>
+        <li>CFDI 4.0, Certificación SAT, Complementos de CFDI, Declaraciones a un click</li>
+      </ul>
+    </section>
+
+    <!-- Paquetes -->
+    <section id="paquetes" class="fade-in">
+      <h2>Tenemos un plan para ti desde $50 mxn anual</h2>
+      <p>¿Recibes nómina? Gestionamos tu devolución de ISR ante el SAT.<br>
+      Nos encargamos de todo el proceso fiscal para que recuperes tu saldo a favor conforme a la legislación vigente y sin complicaciones.</p>
+      <button class="btn-main" onclick="location.href='paquetes.html'">Ver planes</button>
+      <div style="display: flex; gap: 2em; margin-top:2em;">
+        <div>
+          <h3>10 Folios</h3>
+          <div>$50 MXN</div>
+          <div>vigencia anual</div>
+          <button class="btn-outline">Comprar</button>
+        </div>
+        <div>
+          <h3>25 Folios</h3>
+          <div>$105 MXN</div>
+          <div>vigencia anual</div>
+          <button class="btn-outline">Comprar</button>
+        </div>
+        <div>
+          <h3>40 Folios</h3>
+          <div>$160 MXN</div>
+          <div>vigencia anual</div>
+          <button class="btn-outline">Comprar</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="fade-in">
+      <h2>Soluciones eficientes en facturación</h2>
+      <ul>
+        <li>Factura: Genera facturas electrónicas válidas y completas, adaptadas a las normativas vigentes.</li>
+        <li>Visualiza tus Gastos: Consulta y controla tus gastos fácilmente para una mejor administración financiera.</li>
+        <li>Complementos de pago: Añade complementos de pago correctamente a tus facturas.</li>
+        <li>Declaraciones: Simplifica tus procesos fiscales y presenta tus declaraciones de manera puntual.</li>
+        <li>Nómina: Emite recibos de nómina electrónicos.</li>
+        <li>Carta porte: Emite tu carta porte para el traslado de mercancías.</li>
+        <li>Regularízate: Pon en orden tus obligaciones fiscales pendientes.</li>
+      </ul>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="fade-in">
+      <h2>Nuestros usuarios nos recomiendan</h2>
+      <blockquote class="italic">Pedro López: En Contafactura encontré una solución que me permitiera gestionar todas mis facturas desde cualquier lugar.</blockquote>
+      <blockquote class="italic">Alejandra Pérez: La plataforma de Contafactura me permite tener un control total de todos mis gastos y cumplir con mis obligaciones.</blockquote>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="fade-in">
+      <h2>Contáctanos</h2>
+      <form>
+        <input type="text" placeholder="Nombre" required style="display:block; margin:1em 0;">
+        <input type="email" placeholder="Correo electrónico" required style="display:block; margin:1em 0;">
+        <textarea placeholder="Mensaje" required style="display:block; margin:1em 0;"></textarea>
+        <button class="btn-main" type="submit">Enviar</button>
+      </form>
+      <div>
+        <!-- Espacio para imagen/captura -->
+        <img src="contact_screenshot.png" alt="Interfaz de contacto" style="border-radius:12px; box-shadow:0 4px 24px #1874F633;">
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background:#1874F6; color:#fff; padding:2em; margin-top:3em;">
+      <div>
+        <span>Inicio</span> | 
+        <span>Servicios</span> | 
+        <span>Nosotros</span> | 
+        <span>Contacto</span>
+      </div>
+      <div>
+        <a href="#" style="color:#fff; margin:0 1em;">Términos y condiciones</a>
+        <a href="#" style="color:#fff; margin:0 1em;">Política de privacidad</a>
+      </div>
+      <div style="margin-top:1em;">
+        © 2025 Contafactura. Todos los derechos reservados.
+      </div>
+    </footer>
+    <!-- Puedes agregar scripts de animación y frameworks aquí -->
   </body>
 </html>
